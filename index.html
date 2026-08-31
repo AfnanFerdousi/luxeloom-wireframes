@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LuxeLoom — storefront wireframes</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #F4EFE8; color: #2A241E;
+         font-family: "Hanken Grotesk", system-ui, "Helvetica Neue", Arial, sans-serif;
+         -webkit-font-smoothing: antialiased; line-height: 1.55; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { width: min(1080px, 92vw); margin: 0 auto; }
+  header { padding: 72px 0 0; }
+  .mark { display: flex; align-items: center; gap: 11px; }
+  .mark span { font-family: "Instrument Serif", Georgia, serif; font-size: 28px; letter-spacing: -0.01em; }
+  .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.18em;
+             text-transform: uppercase; color: #9C9287; }
+  h1 { font-family: "Instrument Serif", Georgia, serif; font-weight: 400;
+       font-size: clamp(38px, 6vw, 62px); line-height: 1.04; letter-spacing: -0.015em;
+       margin: 26px 0 0; max-width: 16ch; }
+  .lede { margin: 20px 0 0; max-width: 56ch; font-size: 17px; color: #6E6459; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 22px; margin: 56px 0 0; }
+  .card { display: block; background: #FDFAF6; border: 1px solid #E6DDD1; border-radius: 22px;
+          padding: 30px 30px 32px; text-decoration: none;
+          box-shadow: 0 1px 2px rgba(42,36,30,.03), 0 18px 40px -30px rgba(42,36,30,.25);
+          transition: transform .34s cubic-bezier(.24,.8,.3,1), box-shadow .34s ease; }
+  .card:hover { transform: translateY(-6px);
+                box-shadow: 0 1px 2px rgba(42,36,30,.03), 0 34px 60px -32px rgba(42,36,30,.34); }
+  .swatches { display: flex; gap: 7px; margin-bottom: 20px; }
+  .sw { width: 26px; height: 26px; border-radius: 50%; }
+  .card h2 { font-family: "Instrument Serif", Georgia, serif; font-weight: 400;
+             font-size: 30px; letter-spacing: -0.01em; margin: 0; }
+  .card p { margin: 10px 0 0; font-size: 14.5px; color: #6E6459; }
+  .badge { display: inline-block; margin-top: 18px; padding: 5px 12px; border-radius: 999px;
+           background: #EFE6D6; color: #8A6A44; font-size: 11px; font-weight: 700;
+           letter-spacing: 0.12em; text-transform: uppercase; }
+  .go { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px;
+        font-size: 14.5px; font-weight: 600; color: #C0603C; }
+  .card:hover .go { gap: 13px; }
+  .go { transition: gap .3s ease; }
+  .how { margin: 60px 0 0; padding: 28px 30px; border: 1px dashed #D3C7B7; border-radius: 20px; }
+  .how h3 { margin: 0 0 12px; font-size: 15px; font-weight: 700; letter-spacing: 0.01em; }
+  .how ol { margin: 0; padding-left: 20px; font-size: 14.5px; color: #6E6459; }
+  .how li { margin-bottom: 7px; }
+  footer { margin: 56px 0 72px; padding-top: 22px; border-top: 1px solid #E6DDD1;
+           font-size: 13px; color: #9C9287; }
+  @media (prefers-reduced-motion: reduce) { * { transition-duration: 1ms !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark">
+      <svg width="27" height="27" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <path d="M13 3.5 23 8l-10 4.5L3 8l10-4.5Z" fill="#2A241E"/>
+        <path d="M13 12 23 7.5v4L13 16 3 11.5v-4L13 12Z" fill="#C0603C"/>
+        <path d="M13 17 23 12.5v4L13 21 3 16.5v-4L13 17Z" fill="#2A241E" opacity=".35"/>
+      </svg>
+      <span>LuxeLoom</span>
+    </div>
+    <h1>Storefront wireframes</h1>
+    <p class="lede">
+      One platform, three shelves — 3D printing, K-beauty and Japan-inspired fashion — sharing a
+      single account, cart and checkout. Two design directions below, each a working click-through
+      of the same five screens. Open either and press <strong>Play</strong> to watch the whole
+      journey run on its own.
+    </p>
+  </header>
+
+  <div class="grid">
+    <a class="card" href="./organic/">
+      <div class="swatches">
+        <span class="sw" style="background:#C0603C"></span>
+        <span class="sw" style="background:#B0687F"></span>
+        <span class="sw" style="background:#6D8A72"></span>
+        <span class="sw" style="background:#C79544;box-shadow:0 0 0 2px #FDFAF6,0 0 0 3.5px #C79544"></span>
+      </div>
+      <h2>Organic modern</h2>
+      <p>
+        Warm, calm and product-forward. The chrome stays quiet so each shelf's own colour carries
+        the personality — which means a printer, a serum and a hoodie all sit comfortably together,
+        and a fourth category slots in by picking a new hue.
+      </p>
+      <span class="badge">Recommended</span>
+      <span class="go">Open the prototype →</span>
+    </a>
+
+    <a class="card" href="./brutalist/">
+      <div class="swatches">
+        <span class="sw" style="background:#FF4D18"></span>
+        <span class="sw" style="background:#F2409A"></span>
+        <span class="sw" style="background:#3B2FE0"></span>
+        <span class="sw" style="background:#14130F"></span>
+      </div>
+      <h2>Neo-brutalist</h2>
+      <p>
+        Bold and technical, built around the 3D-printing side of the business — hard black rules,
+        print-layer texture and spec-sheet typography. Higher impact, but it makes 3D printing the
+        identity rather than one shelf of several.
+      </p>
+      <span class="go">Open the prototype →</span>
+    </a>
+  </div>
+
+  <div class="how">
+    <h3>How to look at these</h3>
+    <ol>
+      <li>Press <strong>Play the flow</strong> in the top bar — it walks all five screens on its own, about half a minute.</li>
+      <li>Or drive it yourself: the numbered chips jump to a screen, and links, product cards and buttons inside the screens really work.</li>
+      <li>The shelf switcher on screen 02 and the colour/material options on screen 04 are live — click them.</li>
+    </ol>
+  </div>
+
+  <footer>
+    Prices, product names, ratings and reviews are placeholder content for layout only.
+    Items in [square brackets] are details still to be filled in.
+  </footer>
+</div>
+</body>
+</html>
